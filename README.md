@@ -4,7 +4,7 @@ I built this autonomous mobile robot to combine physical distance measurement wi
 
 ## Hardware setup
 
-* Brain: Arduino Uno / Mega
+* Brain: Arduino Uno
 * Vision: HuskyLens AI Camera
 * Distance: HC-SR04 Ultrasonic Sensor
 * Motors: DC Gear Motors and a L293D motor driver
