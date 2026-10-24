@@ -1,4 +1,4 @@
-# Autonomous Rover with HuskyLens and Ultrasonic Sensor
+# Autonomous Object & Proximity Avoidance Rover
 
 I built this autonomous mobile robot to combine physical distance measurement with computer vision. It uses an HC-SR04 ultrasonic sensor to prevent crashes and a HuskyLens camera via I2C to recognize specific objects and navigate around them.
 
