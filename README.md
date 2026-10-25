@@ -75,8 +75,3 @@ When building this, I realized that if the camera wires disconnected while movin
       avanzar();
     }
   }
-
-## Project photos
-![Frontal sensor and camera mounting](IMG-20260808-WA0054.jpg)
-![Physical testing of the rover](Screenshot_20261024_172448_Gallery.jpg)
-<video src="VID-20260808-WA0058_1.mp4" controls="controls" width="100%"></video>
