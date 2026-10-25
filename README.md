@@ -3,17 +3,15 @@
 I built this autonomous mobile robot to combine physical distance measurement with computer vision. It uses an HC-SR04 ultrasonic sensor to prevent crashes and a HuskyLens camera via I2C to recognize specific objects and navigate around them.
 
 ## Hardware setup
-
-* Brain: Arduino Uno
-* Vision: HuskyLens AI Camera
-* Distance: HC-SR04 Ultrasonic Sensor
-* Motors: DC Gear Motors and a L293D motor driver
-* Power: External battery pack to isolate motor noise from the Arduino
+- Brain: Arduino Uno
+- Vision: HuskyLens AI Camera
+- Distance: HC-SR04 Ultrasonic Sensor
+- Motors: DC Gear Motors and a L293D motor driver
+- Power: External battery pack to isolate motor noise from the Arduino
 
 ## Pinout
-
 | Component | Arduino Pin | Function |
-|---|---|---|
+| :--- | :--- | :--- |
 | L293D enA / enB | 9 / 3 (PWM) | Motor speeds |
 | L293D in1 / in2 | 8 / 7 | Left motor direction |
 | L293D in3 / in4 | 5 / 4 | Right motor direction |
@@ -21,7 +19,6 @@ I built this autonomous mobile robot to combine physical distance measurement wi
 | HuskyLens | SDA / SCL | I2C communication |
 
 ## How the code works (and the fail-safe)
-
 When building this, I realized that if the camera wires disconnected while moving, the Arduino loop() would freeze. To fix this, I implemented a non-blocking fail-safe system:
 
 1. Blind mode fallback: If the HuskyLens disconnects, the rover doesn't stop. It automatically switches to using only the ultrasonic sensor to navigate safely.
@@ -75,3 +72,13 @@ When building this, I realized that if the camera wires disconnected while movin
       avanzar();
     }
   }
+```
+
+## Project photos
+
+![Frontal sensor and camera mounting](IMG-20260808-WA0054.jpg)
+
+![Physical testing of the rover](Screenshot_20261024_172448_Gallery.jpg)
+
+<video src="VID-20260808-WA0058_1.mp4" controls="controls" width="100%"></video>
+ 
