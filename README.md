@@ -1,3 +1,6 @@
+
+
+
 # Autonomous Object & Proximity Avoidance Rover
 
 I built this autonomous mobile robot to combine physical distance measurement with computer vision. It uses an HC-SR04 ultrasonic sensor to prevent crashes and a HuskyLens camera via I2C to recognize specific objects and navigate around them.
@@ -80,5 +83,9 @@ When building this, I realized that if the camera wires disconnected while movin
 
 ![Physical testing of the rover](Screenshot_20261024_172448_Gallery.jpg)
 
-<video src="VID-20260808-WA0058_1.mp4" controls="controls" width="100%"></video>
+
+
+https://github.com/user-attachments/assets/d74f2eb6-cae3-49b3-b80f-a04c1aad4ab1
+
+
  
